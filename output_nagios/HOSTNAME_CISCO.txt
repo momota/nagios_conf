@@ -1,0 +1,308 @@
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInOctets_12
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.12 -l "ifInOctets.12=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInOctets_8
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.8 -l "ifInOctets.8=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInOctets_10
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.10 -l "ifInOctets.10=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInOctets_4
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.4 -l "ifInOctets.4=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInOctets_6
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.6 -l "ifInOctets.6=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInOctets_21
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.21 -l "ifInOctets.21=" -u "Byte/s" -w 700000000 -c 900000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInOctets_13
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.13 -l "ifInOctets.13=" -u "Byte/s" -w 700000000 -c 900000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInOctets_9
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.9 -l "ifInOctets.9=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInOctets_11
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.11 -l "ifInOctets.11=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInOctets_5
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.5 -l "ifInOctets.5=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInOctets_7
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.7 -l "ifInOctets.7=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutOctets_12
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.12 -l "ifOutOctets.12=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutOctets_8
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.8 -l "ifOutOctets.8=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutOctets_10
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.10 -l "ifOutOctets.10=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutOctets_4
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.4 -l "ifOutOctets.4=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutOctets_6
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.6 -l "ifOutOctets.6=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutOctets_21
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.21 -l "ifOutOctets.21=" -u "Byte/s" -w 700000000 -c 900000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutOctets_13
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.13 -l "ifOutOctets.13=" -u "Byte/s" -w 700000000 -c 900000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutOctets_9
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.9 -l "ifOutOctets.9=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutOctets_11
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.11 -l "ifOutOctets.11=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutOctets_5
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.5 -l "ifOutOctets.5=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutOctets_7
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.7 -l "ifOutOctets.7=" -u "Byte/s" -w 70000000 -c 90000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInErrors_12
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.12 -l "ifInErrors.12=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInErrors_8
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.8 -l "ifInErrors.8=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInErrors_10
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.10 -l "ifInErrors.10=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInErrors_4
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.4 -l "ifInErrors.4=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInErrors_6
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.6 -l "ifInErrors.6=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInErrors_21
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.21 -l "ifInErrors.21=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInErrors_13
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.13 -l "ifInErrors.13=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInErrors_9
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.9 -l "ifInErrors.9=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInErrors_11
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.11 -l "ifInErrors.11=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInErrors_5
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.5 -l "ifInErrors.5=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifInErrors_7
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.7 -l "ifInErrors.7=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutErrors_12
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.12 -l "ifOutErrors.12=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutErrors_8
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.8 -l "ifOutErrors.8=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutErrors_10
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.10 -l "ifOutErrors.10=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutErrors_4
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.4 -l "ifOutErrors.4=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutErrors_6
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.6 -l "ifOutErrors.6=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutErrors_21
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.21 -l "ifOutErrors.21=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutErrors_13
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.13 -l "ifOutErrors.13=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutErrors_9
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.9 -l "ifOutErrors.9=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutErrors_11
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.11 -l "ifOutErrors.11=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutErrors_5
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.5 -l "ifOutErrors.5=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_CISCO
+  service_description check_ifOutErrors_7
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.7 -l "ifOutErrors.7=" -u "packets" -c 0
+}
+

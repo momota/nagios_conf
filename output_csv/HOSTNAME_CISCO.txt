@@ -1,0 +1,22 @@
+BRI0:2-Bearer Channel,20
+Vlan2,22
+FastEthernet8,12
+FastEthernet4,8
+FastEthernet6,10
+BRI0:2,3
+FastEthernet0,4
+FastEthernet2,6
+BRI0-Physical,17
+VoIP-Null0,14
+BRI0,1
+Null0,15
+BRI0-Signaling,18
+GigabitEthernet0.953,21
+Vlan1,16
+GigabitEthernet0,13
+BRI0:1-Bearer Channel,19
+FastEthernet5,9
+FastEthernet7,11
+BRI0:1,2
+FastEthernet1,5
+FastEthernet3,7

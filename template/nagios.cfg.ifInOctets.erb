@@ -1,0 +1,7 @@
+define service{
+  use                 SNMP-service
+  host_name           <%= @hostname %>
+  service_description check_ifInOctets_<%= @ifIndex %>
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.<%= @ifIndex %> -l "ifInOctets.<%= @ifIndex %>=" -u "Byte/s" -w <%= @w_traffic_threshold %> -c <%= @c_traffic_threshold %>
+}
+

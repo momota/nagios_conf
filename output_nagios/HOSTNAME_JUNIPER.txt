@@ -1,0 +1,308 @@
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInOctets_768
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.768 -l "ifInOctets.768=" -u "Byte/s" -w 7000000000 -c 9000000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInOctets_769
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.769 -l "ifInOctets.769=" -u "Byte/s" -w 7000000000 -c 9000000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInOctets_770
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.770 -l "ifInOctets.770=" -u "Byte/s" -w 7000000000 -c 9000000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInOctets_771
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.771 -l "ifInOctets.771=" -u "Byte/s" -w 7000000000 -c 9000000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInOctets_532
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.532 -l "ifInOctets.532=" -u "Byte/s" -w 700000000 -c 900000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInOctets_533
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.533 -l "ifInOctets.533=" -u "Byte/s" -w 700000000 -c 900000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInOctets_621
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.621 -l "ifInOctets.621=" -u "Byte/s" -w 700000000 -c 900000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInOctets_534
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.534 -l "ifInOctets.534=" -u "Byte/s" -w 700000000 -c 900000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInOctets_538
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.538 -l "ifInOctets.538=" -u "Byte/s" -w 700000000 -c 900000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInOctets_782
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.782 -l "ifInOctets.782=" -u "Byte/s" -w 7000000000 -c 9000000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInOctets_781
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.10.781 -l "ifInOctets.781=" -u "Byte/s" -w 7000000000 -c 9000000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutOctets_768
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.768 -l "ifOutOctets.768=" -u "Byte/s" -w 7000000000 -c 9000000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutOctets_769
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.769 -l "ifOutOctets.769=" -u "Byte/s" -w 7000000000 -c 9000000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutOctets_770
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.770 -l "ifOutOctets.770=" -u "Byte/s" -w 7000000000 -c 9000000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutOctets_771
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.771 -l "ifOutOctets.771=" -u "Byte/s" -w 7000000000 -c 9000000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutOctets_532
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.532 -l "ifOutOctets.532=" -u "Byte/s" -w 700000000 -c 900000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutOctets_533
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.533 -l "ifOutOctets.533=" -u "Byte/s" -w 700000000 -c 900000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutOctets_621
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.621 -l "ifOutOctets.621=" -u "Byte/s" -w 700000000 -c 900000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutOctets_534
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.534 -l "ifOutOctets.534=" -u "Byte/s" -w 700000000 -c 900000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutOctets_538
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.538 -l "ifOutOctets.538=" -u "Byte/s" -w 700000000 -c 900000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutOctets_782
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.782 -l "ifOutOctets.782=" -u "Byte/s" -w 7000000000 -c 9000000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutOctets_781
+  check_command       check_snmp_rate!-o .1.3.6.1.2.1.2.2.1.16.781 -l "ifOutOctets.781=" -u "Byte/s" -w 7000000000 -c 9000000000
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInErrors_768
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.768 -l "ifInErrors.768=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInErrors_769
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.769 -l "ifInErrors.769=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInErrors_770
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.770 -l "ifInErrors.770=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInErrors_771
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.771 -l "ifInErrors.771=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInErrors_532
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.532 -l "ifInErrors.532=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInErrors_533
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.533 -l "ifInErrors.533=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInErrors_621
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.621 -l "ifInErrors.621=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInErrors_534
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.534 -l "ifInErrors.534=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInErrors_538
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.538 -l "ifInErrors.538=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInErrors_782
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.782 -l "ifInErrors.782=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifInErrors_781
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.781 -l "ifInErrors.781=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutErrors_768
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.768 -l "ifOutErrors.768=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutErrors_769
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.769 -l "ifOutErrors.769=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutErrors_770
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.770 -l "ifOutErrors.770=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutErrors_771
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.771 -l "ifOutErrors.771=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutErrors_532
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.532 -l "ifOutErrors.532=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutErrors_533
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.533 -l "ifOutErrors.533=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutErrors_621
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.621 -l "ifOutErrors.621=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutErrors_534
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.534 -l "ifOutErrors.534=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutErrors_538
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.538 -l "ifOutErrors.538=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutErrors_782
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.782 -l "ifOutErrors.782=" -u "packets" -c 0
+}
+
+define service{
+  use                 SNMP-service
+  host_name           HOSTNAME_JUNIPER
+  service_description check_ifOutErrors_781
+  check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.20.781 -l "ifOutErrors.781=" -u "packets" -c 0
+}
+
