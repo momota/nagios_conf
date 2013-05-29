@@ -2,7 +2,7 @@ nagios_conf
 ===========
 
 ネットワーク機器の情報からNagios設定ファイル(インタフェース周りの監視設定)を自動生成するためのスクリプト。
-CiscoとJuniperに対応。ruby2.0.0で動作確認。
+CiscoとJuniperに対応。ruby 2.0.0-p0 (CentOS release 6.3)で動作確認済み。
 
 nagiosのcheck_snmpプラグインを用いてインタフェース監視定義を作成する上で、ifindexをOIDの末尾に付けて設定する必要があった、
 かつ、ifindexが特定のコマンド出力により得られることから作成。(ちなみにifindexはインタフェース番号とリンクしない)
