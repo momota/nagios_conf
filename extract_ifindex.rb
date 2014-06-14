@@ -3,20 +3,20 @@
 
 # extract ifindex from network information 
 class ExtractIfIndex
-  def initialize( inputFilePath )
-    @inputFilePath = inputFilePath
-    @ifindexList   = ''
+  def initialize( input_file_path )
+    @input_file_path = input_file_path
+    @ifindex_list   = ''
   end
 
   def parse( str ); end
 
   def extract_ifindex
-    File::open( @inputFilePath ) { |f|
+    File::open( @input_file_path ) { |f|
       f.each { |line|
-        @ifindexList << parse( line )
+        @ifindex_list << parse( line )
       }
     }
-    @ifindexList
+    @ifindex_list
   end
 end
 
