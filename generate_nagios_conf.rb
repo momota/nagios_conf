@@ -7,45 +7,45 @@ require 'bin/file_op'
 
 class GenerateNagiosConf
   def initialize(filepath, maker)
-    @inputFilePath        = filepath
-    @intermediateFilePath = "./output_csv/" + File::basename( @inputFilePath )
-    @outputFilePath       = "./output_nagios/" + File::basename( @inputFilePath )
-    @maker                = maker
-    @logger               = Logger.new( STDERR )
+    @input_file_path        = filepath
+    @intermediate_file_path = "./output_csv/" + File::basename( @input_file_path )
+    @output_file_path       = "./output_nagios/" + File::basename( @input_file_path )
+    @maker                  = maker
+    @logger                 = Logger.new( STDERR )
   end
 
   attr_reader :logger
 
   def control
-    exit 1 if !File.exists?( @inputFilePath )
+    exit 1 if !File.exists?( @input_file_path )
 
     data = nil
 
     case @maker
     when /juniper/
       logger.debug "[JUNIPER]extraction start"
-      data = ExtractIfIndexJuniper.new( @inputFilePath ).extract_ifindex
+      data = ExtractIfIndexJuniper.new( @input_file_path ).extract_ifindex
       logger.debug "[JUNIPER]extraction end"
-      FileOp.new(@intermediateFilePath, data).output_file
-      logger.debug "file output done : #{@intermediateFilePath}"
+      FileOp.new(@intermediate_file_path, data).output_file
+      logger.debug "file output done : #{@intermediate_file_path}"
 
       logger.debug "[JUNIPER]start formatting"
-      data = FormatCSVForNagiosConfJuniper.new( @intermediateFilePath ).format
+      data = FormatCSVForNagiosConfJuniper.new( @intermediate_file_path ).format
       logger.debug "[JUNIPER]end formatting"
-      FileOp.new(@outputFilePath, data).output_file
-      logger.debug "file output done : #{@outputFilePath}"
+      FileOp.new(@output_file_path, data).output_file
+      logger.debug "file output done : #{@output_file_path}"
     when /cisco/
       logger.debug "[CISCO]extraction start"
-      data = ExtractIfIndexCisco.new( @inputFilePath ).extract_ifindex
+      data = ExtractIfIndexCisco.new( @input_file_path ).extract_ifindex
       logger.debug "[CISCO]extraction end"
-      FileOp.new(@intermediateFilePath, data).output_file
-      logger.debug "file output done : #{@intermediateFilePath}"
+      FileOp.new(@intermediate_file_path, data).output_file
+      logger.debug "file output done : #{@intermediate_file_path}"
 
       logger.debug "[CISCO]start formatting"
-      data = FormatCSVForNagiosConfCisco.new( @intermediateFilePath ).format
+      data = FormatCSVForNagiosConfCisco.new( @intermediate_file_path ).format
       logger.debug "[CISCO]end formatting"
-      FileOp.new(@outputFilePath, data).output_file
-      logger.debug "file output done : #{@outputFilePath}"
+      FileOp.new(@output_file_path, data).output_file
+      logger.debug "file output done : #{@output_file_path}"
     else
       logger.error "invalid maker. input 'juniper' or 'cisco'"
       exit 2
