@@ -1,7 +1,7 @@
 define service{
   use                 SNMP-service
   host_name           <%= @hostname %>
-  service_description check_ifInErrors_<%= @ifIndex %>
+  service_description check_ifInErrors_<%= @interface %>_<%= @ifIndex %>
   check_command       check_snmp_rate-multiplier!-o .1.3.6.1.2.1.2.2.1.14.<%= @ifIndex %> -l "ifInErrors.<%= @ifIndex %>=" -u "packets" -c <%= @c_error_threshold %>
 }
 
