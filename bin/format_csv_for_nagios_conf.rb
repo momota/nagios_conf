@@ -12,12 +12,12 @@ class FormatCSVForNagiosConf
 
   warn_rate  = 0.7
   error_rate = 0.9
-  W_TRAFFIC_THRESHOLD_10G  = 10000000000 * warn_rate
-  C_TRAFFIC_THRESHOLD_10G  = 10000000000 * error_rate
-  W_TRAFFIC_THRESHOLD_1G   = 1000000000  * warn_rate
-  C_TRAFFIC_THRESHOLD_1G   = 1000000000  * error_rate
-  W_TRAFFIC_THRESHOLD_100M = 100000000   * warn_rate
-  C_TRAFFIC_THRESHOLD_100M = 100000000   * error_rate
+  W_TRAFFIC_THRESHOLD_10G  = (10000000000 * warn_rate).to_i
+  C_TRAFFIC_THRESHOLD_10G  = (10000000000 * error_rate).to_i
+  W_TRAFFIC_THRESHOLD_1G   = (1000000000  * warn_rate).to_i
+  C_TRAFFIC_THRESHOLD_1G   = (1000000000  * error_rate).to_i
+  W_TRAFFIC_THRESHOLD_100M = (100000000   * warn_rate).to_i
+  C_TRAFFIC_THRESHOLD_100M = (100000000   * error_rate).to_i
 
   def initialize( input_file_path )
     @input_file_path = input_file_path
