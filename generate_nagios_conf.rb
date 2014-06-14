@@ -1,10 +1,9 @@
-#!/usr/local/rbenv/shims/ruby
 # -*- coding: utf-8 -*-
 $LOAD_PATH.push('.')
 require 'logger'
-require 'extract_ifindex'
-require 'format_csv_for_nagios_conf'
-require 'lib/file_op'
+require 'bin/extract_ifindex'
+require 'bin/format_csv_for_nagios_conf'
+require 'bin/file_op'
 
 class GenerateNagiosConf
   def initialize(filepath, maker)
