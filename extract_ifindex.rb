@@ -1,4 +1,3 @@
-#!/usr/local/rbenv/shims/ruby
 # -*- coding: utf-8 -*-
 
 # extract ifindex from network information 
@@ -26,7 +25,6 @@ class ExtractIfIndexCisco < ExtractIfIndex
   def parse( str )
     str.split(': Ifindex = ').join(',')
   end
-
 end
 
 
@@ -38,8 +36,6 @@ class ExtractIfIndexJuniper < ExtractIfIndex
       return "#{$1},"
     when /^ *Interface.index.*ifIndex: ([0-9]+)/
       return "#{$1}\n"
-    when /^ *Logical.interface.(.*)\(.*ifIndex.([0-9]+)/
-      return "#{$1},#{$2}\n"
     else
       return ''
     end
